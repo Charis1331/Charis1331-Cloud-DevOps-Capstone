@@ -10,5 +10,5 @@ built a CI/CD pipeline for a microservices application for a blue/green deployme
 * Develop Docker containers
 
 ### Folders explanation
-* clusters_pipeline: Code for creating an EKS cluster
-* 
+* clusters_pipeline: CloudFormation code for creating an EKS cluster
+* deploy_pipeline: Deployment code for the containers' pipeline
