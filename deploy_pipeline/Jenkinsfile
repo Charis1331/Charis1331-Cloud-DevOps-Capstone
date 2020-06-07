@@ -1,0 +1,53 @@
+pipeline {
+	agent any
+	stages {
+
+		stage('Lint HTML') {
+			steps {
+				sh 'tidy -q -e *.html'
+			}
+		}
+		
+		stage('Build Docker Image') {
+			steps {
+				echo "test"
+			}
+		}
+
+		stage('Push Image To Dockerhub') {
+			steps {
+				echo "test"
+			}
+		}
+
+		stage('Set current kubectl context') {
+			steps {
+				echo "test"
+			}
+		}
+
+		stage('Deploy blue container') {
+			steps {
+				echo "test"
+			}
+		}
+
+		stage('Deploy green container') {
+			steps {
+				echo "test"
+			}
+		}
+
+		stage('Create the service in the cluster, redirect to blue') {
+			steps {
+				echo "test"
+			}
+		}
+
+		stage('Create the service in the cluster, redirect to green') {
+			steps {
+				echo "+ kubectl apply -f ./green-service.json"
+			}
+		}
+	}
+}
